@@ -1,0 +1,15 @@
+{% extends 'shop/base.html' %}
+{% load i18n %}
+{% block title %}{% trans 'Лидер продаж' %}{% endblock %}
+{% block content %}
+    <h2>{% trans 'Лидер продаж' %}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>{% trans 'Сортировать' %}</button>
+    </form>
+    {% if product %}
+    <h2>ID:{{ product.id }} - {{ product.name }}</h2>
+    <p>{% trans 'Было продано' %} - {{ count }} {% trans 'ед' %}.</p>
+    {% endif %}
+{% endblock %}

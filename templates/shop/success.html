@@ -1,0 +1,7 @@
+{% extends 'shop/base.html' %}
+{% load i18n %}
+{% block title  %}{% trans 'Успех' %}{% endblock %}
+{% block content %}
+    <h2>Баланс успешно пополнен</h2>
+    <a href="{% url 'shop:user_info' pk=user.id %}">В личный кабинет</a>
+{% endblock %}

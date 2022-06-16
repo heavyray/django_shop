@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-19 18:34+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\app_users\forms.py:8 .\app_users\templates\app_users\user_info.html:7
+msgid "Имя"
+msgstr "Имя"
+
+#: .\app_users\forms.py:9 .\app_users\templates\app_users\user_info.html:8
+msgid "Фамилия"
+msgstr "Фамилия"
+
+#: .\app_users\forms.py:17
+msgid "Сумма"
+msgstr "Сумма"
+
+#: .\app_users\forms.py:21
+msgid "С"
+msgstr "С"
+
+#: .\app_users\forms.py:22
+msgid "по"
+msgstr "по"
+
+#: .\app_users\models.py:9 .\app_users\models.py:23
+msgid "статус"
+msgstr "Статус"
+
+#: .\app_users\models.py:12 .\app_users\models.py:13
+msgid "статусы"
+msgstr "Статусы"
+
+#: .\app_users\models.py:21
+msgid "пользователь"
+msgstr "Пользователь"
+
+#: .\app_users\models.py:22
+msgid "баланс"
+msgstr "Баланс"
+
+#: .\app_users\models.py:26
+msgid "профили"
+msgstr "Профили"
+
+#: .\app_users\models.py:27
+msgid "профиль"
+msgstr "Профиль"
+
+#: .\app_users\models.py:30
+msgid "Инфо о"
+msgstr "Инфо о"
+
+#: .\app_users\models.py:36 .\app_users\models.py:49
+msgid "название"
+msgstr "Название"
+
+#: .\app_users\models.py:37
+msgid "описание"
+msgstr "Описание"
+
+#: .\app_users\models.py:40
+msgid "магазины"
+msgstr "Магазины"
+
+#: .\app_users\models.py:41 .\app_users\models.py:51
+msgid "магазин"
+msgstr "Магазин"
+
+#: .\app_users\models.py:50 .\orders\models.py:29
+msgid "цена"
+msgstr "Цена"
+
+#: .\app_users\models.py:52
+msgid "остаток"
+msgstr "Остаток"
+
+#: .\app_users\models.py:56
+msgid "товары"
+msgstr "Товары"
+
+#: .\app_users\models.py:57 .\orders\models.py:28
+msgid "товар"
+msgstr "Товар"
+
+#: .\app_users\templates\app_users\balance.html:3
+#: .\app_users\templates\app_users\balance.html:5
+msgid "Пополнение баланса"
+msgstr "Пополнение баланса"
+
+#: .\app_users\templates\app_users\balance.html:9
+msgid "Пополнить"
+msgstr "Пополнить"
+
+#: .\app_users\templates\app_users\base.html:13
+msgid "Добро пожаловать"
+msgstr "Добро пожаловать"
+
+#: .\app_users\templates\app_users\base.html:16
+msgid "Выйти"
+msgstr "Выйти"
+
+#: .\app_users\templates\app_users\base.html:18
+msgid "Вы не авторизованны на сайте"
+msgstr "Вы не авторизованны на сайте"
+
+#: .\app_users\templates\app_users\base.html:19
+msgid "Вход"
+msgstr "Вход"
+
+#: .\app_users\templates\app_users\base.html:20
+#: .\app_users\templates\app_users\register.html:3
+#: .\app_users\templates\app_users\register.html:5
+#: .\app_users\templates\app_users\register.html:9
+msgid "Регистрация"
+msgstr "Регистрация"
+
+#: .\app_users\templates\app_users\base.html:40
+msgid "На главную"
+msgstr "На главную"
+
+#: .\app_users\templates\app_users\base.html:41
+#: .\app_users\templates\app_users\best_sellers.html:3
+#: .\app_users\templates\app_users\best_sellers.html:5
+msgid "Лидер продаж"
+msgstr "Лидер продаж"
+
+#: .\app_users\templates\app_users\base.html:46
+#: .\cart\templates\cart\detail.html:3 .\cart\templates\cart\detail.html:5
+msgid "Корзина"
+msgstr "Корзина"
+
+#: .\app_users\templates\app_users\best_sellers.html:9
+#, fuzzy
+#| msgid "пользователь"
+msgid "Сортировать"
+msgstr "Пользователь"
+
+#: .\app_users\templates\app_users\best_sellers.html:13
+#, fuzzy
+#| msgid "Лидер продаж"
+msgid "Было продано"
+msgstr "Лидер продаж"
+
+#: .\app_users\templates\app_users\best_sellers.html:13
+msgid "ед"
+msgstr "ед"
+
+#: .\app_users\templates\app_users\detail_product.html:11
+msgid "Добавить в корзину"
+msgstr "Добавить в корзину"
+
+#: .\app_users\templates\app_users\detail_product.html:14
+msgid "Авторизуйтесь, чтобы совершать покупки"
+msgstr "Авторизуйтесь, чтобы совершать покупки"
+
+#: .\app_users\templates\app_users\login.html:3
+msgid "Логин"
+msgstr "Логин"
+
+#: .\app_users\templates\app_users\login.html:5
+msgid "Страница входа"
+msgstr "Страница входа"
+
+#: .\app_users\templates\app_users\login.html:9
+msgid "Войти"
+msgstr "Войти"
+
+#: .\app_users\templates\app_users\logout.html:3
+msgid "Выход из аккаунта"
+msgstr "Выход из аккаунта"
+
+#: .\app_users\templates\app_users\logout.html:5
+msgid "Вы вышли из системы"
+msgstr "Вы вышли из системы"
+
+#: .\app_users\templates\app_users\main_page.html:3
+msgid "Главная страница"
+msgstr "Главная страница"
+
+#: .\app_users\templates\app_users\main_page.html:11
+msgid "Продавец"
+msgstr "Продавец"
+
+#: .\app_users\templates\app_users\main_page.html:16
+msgid "Список товаров пуст"
+msgstr "Список товаров пуст"
+
+#: .\app_users\templates\app_users\main_page.html:22
+msgid "Первая"
+msgstr "Первая"
+
+#: .\app_users\templates\app_users\main_page.html:23
+msgid "Предыдущая"
+msgstr "Предыдущая"
+
+#: .\app_users\templates\app_users\main_page.html:27
+msgid "Страница"
+msgstr "Страница"
+
+#: .\app_users\templates\app_users\main_page.html:27
+msgid "из"
+msgstr "из"
+
+#: .\app_users\templates\app_users\main_page.html:31
+msgid "Следующая"
+msgstr "Следующая"
+
+#: .\app_users\templates\app_users\main_page.html:32
+msgid "Последняя"
+msgstr "Последняя"
+
+#: .\app_users\templates\app_users\success.html:3
+msgid "Успех"
+msgstr "Успех"
+
+#: .\app_users\templates\app_users\user_info.html:3
+msgid "Личный кабинет"
+msgstr "Личный кабинет"
+
+#: .\app_users\templates\app_users\user_info.html:5
+#, fuzzy
+#| msgid "Пополнение баланса"
+msgid "Пополнить баланс"
+msgstr "Пополнение баланса"
+
+#: .\app_users\templates\app_users\user_info.html:6
+msgid "Ник"
+msgstr "Ник"
+
+#: .\app_users\templates\app_users\user_info.html:9
+msgid "Баланс"
+msgstr "Баланс"
+
+#: .\app_users\templates\app_users\user_info.html:10
+msgid "Статус"
+msgstr "Статус"
+
+#: .\cart\templates\cart\detail.html:9
+msgid "Товар"
+msgstr "Товар"
+
+#: .\cart\templates\cart\detail.html:10
+msgid "Количество"
+msgstr "Количество"
+
+#: .\cart\templates\cart\detail.html:11 .\cart\templates\cart\detail.html:22
+msgid "Удалить"
+msgstr "Удалить"
+
+#: .\cart\templates\cart\detail.html:12
+msgid "Цена товара"
+msgstr "Цена товара"
+
+#: .\cart\templates\cart\detail.html:13
+msgid "Полная цена"
+msgstr "Полная цена"
+
+#: .\cart\templates\cart\detail.html:29 .\orders\templates\orders\order.html:16
+msgid "Всего"
+msgstr "Всего"
+
+#: .\cart\templates\cart\detail.html:36
+msgid "Продолжить покупки"
+msgstr "Продолжить покупки"
+
+#: .\cart\templates\cart\detail.html:37
+msgid "Оформить"
+msgstr "Оформить"
+
+#: .\orders\models.py:8
+msgid "покупатель"
+msgstr "Покупатель"
+
+#: .\orders\models.py:9
+msgid "адрес"
+msgstr "Адрес"
+
+#: .\orders\models.py:10
+msgid "почтовый индекс"
+msgstr "Почтовый индекс"
+
+#: .\orders\models.py:11
+msgid "город"
+msgstr "Город"
+
+#: .\orders\models.py:12
+msgid "создан"
+msgstr "Создан"
+
+#: .\orders\models.py:15 .\orders\models.py:27
+msgid "заказ"
+msgstr "Заказ"
+
+#: .\orders\models.py:16
+msgid "заказы"
+msgstr "Заказы"
+
+#: .\orders\models.py:19
+msgid "Заказ"
+msgstr "Заказ"
+
+#: .\orders\models.py:30
+msgid "количество"
+msgstr "Количество"
+
+#: .\orders\models.py:33
+msgid "заказанный товар"
+msgstr "Заказанный товар"
+
+#: .\orders\models.py:34
+msgid "заказанные товары"
+msgstr "Заказанные товары"
+
+#: .\orders\templates\orders\order.html:3
+#: .\orders\templates\orders\order.html:5
+msgid "Оформление заказа"
+msgstr "Оформление заказа"
+
+#: .\orders\templates\orders\order.html:7
+msgid "Ваш заказ"
+msgstr "Ваш заказ"
+
+#: .\orders\templates\orders\success.html:3
+#: .\orders\templates\orders\success.html:5
+msgid "Спасибо"
+msgstr "Спасибо"
+
+#: .\orders\templates\orders\success.html:6
+msgid "Ваш заказ был успешно создан. Номер вашего заказа -"
+msgstr "Ваш заказ был успешно создан. Номер вашего заказа -"

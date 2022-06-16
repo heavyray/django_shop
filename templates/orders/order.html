@@ -1,0 +1,23 @@
+{% extends 'shop/base.html' %}
+{% load i18n %}
+{% block title %}{% trans 'Оформление заказа' %}{% endblock %}
+{% block content %}
+    <h2>{% trans 'Оформление заказа' %}</h2>
+    <div class="order-info">
+        <h3>{% trans 'Ваш заказ' %}</h3>
+        <ul>
+            {% for item in cart %}
+                <li>
+                    {{ item.quantity }} x {{ item.product.name }} -
+                    <span><b>{{ item.total_price }} руб</b></span>
+                </li>
+            {% endfor %}
+        </ul>
+        <p>{% trans 'Всего' %}: {{ cart.get_total_price }} руб</p>
+    </div>
+    <form action="." method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><input type="submit" value="Place order"></p>
+    </form>
+{% endblock %}

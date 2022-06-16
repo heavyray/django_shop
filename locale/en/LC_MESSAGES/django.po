@@ -1,0 +1,346 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-19 18:34+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\app_users\forms.py:8 .\app_users\templates\app_users\user_info.html:7
+msgid "Имя"
+msgstr "Name"
+
+#: .\app_users\forms.py:9 .\app_users\templates\app_users\user_info.html:8
+msgid "Фамилия"
+msgstr "Last name"
+
+#: .\app_users\forms.py:17
+msgid "Сумма"
+msgstr "The amount"
+
+#: .\app_users\forms.py:21
+msgid "С"
+msgstr "From"
+
+#: .\app_users\forms.py:22
+msgid "по"
+msgstr "To"
+
+#: .\app_users\models.py:9 .\app_users\models.py:23
+msgid "статус"
+msgstr "Status"
+
+#: .\app_users\models.py:12 .\app_users\models.py:13
+msgid "статусы"
+msgstr "Statuses"
+
+#: .\app_users\models.py:21
+msgid "пользователь"
+msgstr "User"
+
+#: .\app_users\models.py:22
+msgid "баланс"
+msgstr "Balance"
+
+#: .\app_users\models.py:26
+msgid "профили"
+msgstr "Profiles"
+
+#: .\app_users\models.py:27
+msgid "профиль"
+msgstr "Profile"
+
+#: .\app_users\models.py:30
+msgid "Инфо о"
+msgstr "Info about"
+
+#: .\app_users\models.py:36 .\app_users\models.py:49
+msgid "название"
+msgstr "Title"
+
+#: .\app_users\models.py:37
+msgid "описание"
+msgstr "Description"
+
+#: .\app_users\models.py:40
+msgid "магазины"
+msgstr "Shops"
+
+#: .\app_users\models.py:41 .\app_users\models.py:51
+msgid "магазин"
+msgstr "Shop"
+
+#: .\app_users\models.py:50 .\orders\models.py:29
+msgid "цена"
+msgstr "Price"
+
+#: .\app_users\models.py:52
+msgid "остаток"
+msgstr "Stock"
+
+#: .\app_users\models.py:56
+msgid "товары"
+msgstr "Products"
+
+#: .\app_users\models.py:57 .\orders\models.py:28
+msgid "товар"
+msgstr "Product"
+
+#: .\app_users\templates\app_users\balance.html:3
+#: .\app_users\templates\app_users\balance.html:5
+msgid "Пополнение баланса"
+msgstr "Replenishment of the balance"
+
+#: .\app_users\templates\app_users\balance.html:9
+msgid "Пополнить"
+msgstr "Top up"
+
+#: .\app_users\templates\app_users\base.html:13
+msgid "Добро пожаловать"
+msgstr "Welcome"
+
+#: .\app_users\templates\app_users\base.html:16
+msgid "Выйти"
+msgstr "Log out"
+
+#: .\app_users\templates\app_users\base.html:18
+msgid "Вы не авторизованны на сайте"
+msgstr "You are not logged in to the site"
+
+#: .\app_users\templates\app_users\base.html:19
+msgid "Вход"
+msgstr "Log in"
+
+#: .\app_users\templates\app_users\base.html:20
+#: .\app_users\templates\app_users\register.html:3
+#: .\app_users\templates\app_users\register.html:5
+#: .\app_users\templates\app_users\register.html:9
+msgid "Регистрация"
+msgstr "Registration"
+
+#: .\app_users\templates\app_users\base.html:40
+msgid "На главную"
+msgstr "To the main page"
+
+#: .\app_users\templates\app_users\base.html:41
+#: .\app_users\templates\app_users\best_sellers.html:3
+#: .\app_users\templates\app_users\best_sellers.html:5
+msgid "Лидер продаж"
+msgstr "Best seller"
+
+#: .\app_users\templates\app_users\base.html:46
+#: .\cart\templates\cart\detail.html:3 .\cart\templates\cart\detail.html:5
+msgid "Корзина"
+msgstr "Cart"
+
+#: .\app_users\templates\app_users\best_sellers.html:9
+#, fuzzy
+#| msgid "пользователь"
+msgid "Сортировать"
+msgstr "User"
+
+#: .\app_users\templates\app_users\best_sellers.html:13
+#, fuzzy
+#| msgid "Лидер продаж"
+msgid "Было продано"
+msgstr "Best seller"
+
+#: .\app_users\templates\app_users\best_sellers.html:13
+msgid "ед"
+msgstr "pcs"
+
+#: .\app_users\templates\app_users\detail_product.html:11
+msgid "Добавить в корзину"
+msgstr "Add to Cart"
+
+#: .\app_users\templates\app_users\detail_product.html:14
+msgid "Авторизуйтесь, чтобы совершать покупки"
+msgstr "Log in to make purchases"
+
+#: .\app_users\templates\app_users\login.html:3
+msgid "Логин"
+msgstr "Login"
+
+#: .\app_users\templates\app_users\login.html:5
+msgid "Страница входа"
+msgstr "Login page"
+
+#: .\app_users\templates\app_users\login.html:9
+msgid "Войти"
+msgstr "Login"
+
+#: .\app_users\templates\app_users\logout.html:3
+msgid "Выход из аккаунта"
+msgstr "Log out of your account"
+
+#: .\app_users\templates\app_users\logout.html:5
+msgid "Вы вышли из системы"
+msgstr "You are logged out"
+
+#: .\app_users\templates\app_users\main_page.html:3
+msgid "Главная страница"
+msgstr "Home page"
+
+#: .\app_users\templates\app_users\main_page.html:11
+msgid "Продавец"
+msgstr "Seller"
+
+#: .\app_users\templates\app_users\main_page.html:16
+msgid "Список товаров пуст"
+msgstr "The list of products is empty"
+
+#: .\app_users\templates\app_users\main_page.html:22
+msgid "Первая"
+msgstr "First"
+
+#: .\app_users\templates\app_users\main_page.html:23
+msgid "Предыдущая"
+msgstr "Previous"
+
+#: .\app_users\templates\app_users\main_page.html:27
+msgid "Страница"
+msgstr "Page"
+
+#: .\app_users\templates\app_users\main_page.html:27
+msgid "из"
+msgstr "of"
+
+#: .\app_users\templates\app_users\main_page.html:31
+msgid "Следующая"
+msgstr "Next"
+
+#: .\app_users\templates\app_users\main_page.html:32
+msgid "Последняя"
+msgstr "Last"
+
+#: .\app_users\templates\app_users\success.html:3
+msgid "Успех"
+msgstr "Success"
+
+#: .\app_users\templates\app_users\user_info.html:3
+msgid "Личный кабинет"
+msgstr "Personal account"
+
+#: .\app_users\templates\app_users\user_info.html:5
+#, fuzzy
+#| msgid "Пополнить"
+msgid "Пополнить баланс"
+msgstr "Replenishment of the balance"
+
+#: .\app_users\templates\app_users\user_info.html:6
+msgid "Ник"
+msgstr "Username"
+
+#: .\app_users\templates\app_users\user_info.html:9
+msgid "Баланс"
+msgstr "Balance"
+
+#: .\app_users\templates\app_users\user_info.html:10
+msgid "Статус"
+msgstr "Status"
+
+#: .\cart\templates\cart\detail.html:9
+msgid "Товар"
+msgstr "Product"
+
+#: .\cart\templates\cart\detail.html:10
+msgid "Количество"
+msgstr "Count"
+
+#: .\cart\templates\cart\detail.html:11 .\cart\templates\cart\detail.html:22
+msgid "Удалить"
+msgstr "Delete"
+
+#: .\cart\templates\cart\detail.html:12
+msgid "Цена товара"
+msgstr "Product price"
+
+#: .\cart\templates\cart\detail.html:13
+msgid "Полная цена"
+msgstr "Total price"
+
+#: .\cart\templates\cart\detail.html:29 .\orders\templates\orders\order.html:16
+msgid "Всего"
+msgstr "Total"
+
+#: .\cart\templates\cart\detail.html:36
+msgid "Продолжить покупки"
+msgstr "Continue shopping"
+
+#: .\cart\templates\cart\detail.html:37
+msgid "Оформить"
+msgstr "Arrange"
+
+#: .\orders\models.py:8
+msgid "покупатель"
+msgstr "Buyer"
+
+#: .\orders\models.py:9
+msgid "адрес"
+msgstr "Address"
+
+#: .\orders\models.py:10
+msgid "почтовый индекс"
+msgstr "Postal code"
+
+#: .\orders\models.py:11
+msgid "город"
+msgstr "City"
+
+#: .\orders\models.py:12
+msgid "создан"
+msgstr "Create"
+
+#: .\orders\models.py:15 .\orders\models.py:27
+msgid "заказ"
+msgstr "Order"
+
+#: .\orders\models.py:16
+msgid "заказы"
+msgstr "Orders"
+
+#: .\orders\models.py:19
+msgid "Заказ"
+msgstr "Order"
+
+#: .\orders\models.py:30
+msgid "количество"
+msgstr "Count"
+
+#: .\orders\models.py:33
+msgid "заказанный товар"
+msgstr "Ordered product"
+
+#: .\orders\models.py:34
+msgid "заказанные товары"
+msgstr "Ordered products"
+
+#: .\orders\templates\orders\order.html:3
+#: .\orders\templates\orders\order.html:5
+msgid "Оформление заказа"
+msgstr "Making an order"
+
+#: .\orders\templates\orders\order.html:7
+msgid "Ваш заказ"
+msgstr "Your order"
+
+#: .\orders\templates\orders\success.html:3
+#: .\orders\templates\orders\success.html:5
+msgid "Спасибо"
+msgstr "Thanks"
+
+#: .\orders\templates\orders\success.html:6
+msgid "Ваш заказ был успешно создан. Номер вашего заказа -"
+msgstr "Your order has been successfully created. Your order number -"

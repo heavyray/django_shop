@@ -1,0 +1,39 @@
+{% extends 'shop/base.html' %}
+{% load i18n %}
+{% block title %}{% trans 'Корзина' %}{% endblock %}
+{% block content %}
+    <h1>{% trans 'Корзина' %}</h1>
+    <table class="cart">
+        <thead>
+        <tr>
+            <th>{% trans 'Товар' %}</th>
+            <th>{% trans 'Количество' %}</th>
+            <th>{% trans 'Удалить' %}</th>
+            <th>{% trans 'Цена товара' %}</th>
+            <th>{% trans 'Полная цена' %}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in cart %}
+            {% with product=item.product %}
+                <tr>
+                    <td>{{ product.name }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td><a href="{% url 'cart:cart_remove' product.id%}">{% trans 'Удалить' %}</a></td>
+                    <td class="num">{{ item.price }}руб</td>
+                    <td class="num">{{ item.total_price }}руб</td>
+                </tr>
+            {% endwith %}
+        {% endfor %}
+        <tr class="total">
+            <td>{% trans 'Всего' %}</td>
+            <td colspan="4"></td>
+            <td class="num">{{ cart.get_total_price }}руб</td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="text-right">
+        <a href="{% url 'shop:main_page' %}" class="button light">{% trans 'Продолжить покупки' %}</a>
+        <a href="{% url 'orders:order_create' %}" class="button">{% trans 'Оформить' %}</a>
+    </p>
+{% endblock %}

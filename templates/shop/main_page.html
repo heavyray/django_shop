@@ -1,0 +1,56 @@
+{% extends 'shop/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}{% if category %}{{ category.name }}{% else %}{% trans 'Главная страница' %}{% endif %}{% endblock %}
+{% block content %}
+<div>
+ <h3>{% trans 'Категории' %}</h3>
+     <ul>
+         <li>
+            <a href="{% url 'shop:main_page' %}">All</a>
+         </li>
+         {% for c in categories %}
+             <li>
+                <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+             </li>
+        {% endfor %}
+     </ul>
+ </div>
+<div>
+    <ul>
+        {% if page_obj %}
+        <h2>{% if category %}{% trans 'Товары по категории ' %}{{ category.name }}{% else %}{% trans 'Главная страница' %}{% endif %}</h2>
+            <ul style="display: flex; ">
+                {% for product in page_obj %}
+                    <li style="display:flex; align-items: center; flex-direction: column; margin-right: 30px" >
+                        <a href="{{ product.get_absolute_url }}" style="">
+                        <img style="width: 200px; height: 150px" src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.jpg' %}{% endif %}">
+                        </a>
+                        <h3 style="margin: 0"><a href="{{ product.get_absolute_url }}">{{ product.name }}</a></h3>
+                        <p style="margin: 0">  {{ product.price }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <h2>{% trans 'Список товаров пуст' %}</h2>
+        {% endif %}
+    </ul>
+    <div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">&laquo; {% trans 'Первая' %}</a>
+                <a href="?page={{ page_obj.previous_page_number }}">{% trans 'Предыдущая' %}</a>
+            {% endif %}
+
+            <span class="current">
+                {% trans 'Страница' %} {{ page_obj.number }} {% trans 'из' %} {{ page_obj.paginator.num_pages }}.
+            </span>
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">{% trans 'Следующая' %}</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">{% trans 'Последняя' %} &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
+</div>
+{% endblock %}

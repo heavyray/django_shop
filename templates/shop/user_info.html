@@ -1,0 +1,11 @@
+{% extends 'shop/base.html' %}
+{% load i18n %}
+{% block title  %}{% trans 'Личный кабинет' %}{% endblock %}
+{% block content %}
+    <a href="{% url 'shop:balance' %}" >{% trans 'Пополнить баланс' %}</a>
+    <h2>{% trans 'Ник' %}: {{ user.username }}</h2>
+    <h2>{% trans 'Имя' %}: {{ user.first_name }}</h2>
+    <h2>{% trans 'Фамилия' %}: {{ user.last_name }}</h2>
+    <h2>{% trans 'Баланс' %}: {{ other_info.balance }}</h2>
+    <h2>{% trans 'Статус' %}: {{ other_info.status }}</h2>
+{% endblock %}

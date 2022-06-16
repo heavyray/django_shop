@@ -1,0 +1,16 @@
+{% extends 'shop/base.html' %}
+{% load i18n %}
+{% block title %}{{ product.name }}{% endblock %}
+{% block content %}
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.price }} руб</p>
+    {% if user.is_authenticated %}
+        <form action="{% url 'cart:cart_add' product.id %}" method="post">
+            {{ cart_product_form }}
+            {% csrf_token %}
+            <button type="submit">{% trans 'Добавить в корзину' %}</button>
+        </form>
+    {% else %}
+    <span>{% trans 'Авторизуйтесь, чтобы совершать покупки' %}</span>
+    {% endif %}
+{% endblock %}

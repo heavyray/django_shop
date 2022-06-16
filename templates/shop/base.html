@@ -1,0 +1,62 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block header %}
+    <div style="padding: 15px 40px; background-color: #F1F1F1; border-radius: 15px;">
+        <div style="display: flex; align-items: center; font-size: 16px">
+            {% if user.is_authenticated %}
+                <h3 style="margin-right: 20px">{% trans 'Добро пожаловать' %},
+                    <a href="{% url 'shop:user_info' pk=user.id %}">{{ user.username }}</a>
+                </h3>
+                <a style="margin-right: 20px" href="{% url 'shop:logout' %}">{% trans 'Выйти' %}</a>
+            {% else %}
+                <h3 style="margin-right: 20px">{% trans 'Вы не авторизованны на сайте' %}.</h3>
+                <a style="margin-right: 20px" href="{% url 'shop:login' %}">{% trans 'Вход' %}</a>
+                <a style="margin-right: 20px" href="{% url 'shop:register' %}">{% trans 'Регистрация' %}</a>
+            {% endif %}
+        </div>
+        <div>
+            <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ redirect_to }}">
+            <select name="language">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                        {{ language.name_local }} | {{ language.code }}
+                    </option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Go">
+            </form>
+        </div>
+        <a style="margin-right: 20px" href="{% url 'shop:main_page' %}">{% trans 'На главную' %}</a>
+        <a style="margin-right: 20px" href="{% url 'shop:best_sellers' %}">{% trans 'Лидер продаж' %}</a>
+        {% if user.is_authenticated %}
+            <div class="cart">
+                {% with total_items=cart|length %}
+                    {% if cart|length > 0 %}
+                        {% trans 'Корзина' %}:
+                        <a href='{% url "cart:cart_detail" %}'>
+                            {{ cart.get_total_price }} руб
+                        </a>
+                    {% else %}
+                        {% trans 'Ваша корзина пуста' %}.
+                    {% endif %}
+                {% endwith %}
+            </div>
+        {% endif %}
+    </div>
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
