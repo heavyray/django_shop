@@ -81,7 +81,7 @@ Command for Windows:
 $ python manage.py runserver
 ```
 
-Command for Linux:
+Command for Linux: 
 ```python
 $ python3 manage.py runserver
 ```
